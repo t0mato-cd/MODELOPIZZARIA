@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forno Nobre Pizzaria</title>
+    <meta
+      name="description"
+      content="Site modelo profissional de pizzaria com cardápio, pedido por WhatsApp, mapa, contato e avaliações."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Forno Nobre Pizzaria">
+        <img class="brand-mark" src="assets/logo-forno-nobre.svg" alt="" />
+        <span>
+          <strong>Forno Nobre</strong>
+          <small>Pizzaria artesanal</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-action" href="#pedido">Pedir agora</a>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Aberto hoje até 23h30</p>
+          <h1>Pizza de forno quente, massa leve e pedido direto no WhatsApp.</h1>
+          <p>
+            Um modelo completo para pizzaria moderna, com cardápio interativo,
+            contato, mapa, avaliações e chamada direta para venda.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#cardapio">Ver cardápio</a>
+            <a class="button ghost" href="https://www.instagram.com/supersupersite" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Pizza artesanal fotografada">
+          <img
+            src="https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=1100&q=85"
+            alt="Pizza artesanal real saindo do forno"
+            referrerpolicy="no-referrer"
+          />
+          <div class="floating-card">
+            <strong>4.9</strong>
+            <span>Avaliação no Google</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats reveal" aria-label="Números da pizzaria">
+        <article>
+          <strong>+12 mil</strong>
+          <span>Pizzas entregues</span>
+        </article>
+        <article>
+          <strong>4.9★</strong>
+          <span>Avaliação no Google</span>
+        </article>
+        <article>
+          <strong>35 min</strong>
+          <span>Tempo médio de entrega</span>
+        </article>
+      </section>
+
+      <section class="section split reveal" id="sobre">
+        <div>
+          <p class="eyebrow">Sabor de pizzaria premium</p>
+          <h2>Massa fermentada, molho fresco e ingredientes escolhidos todos os dias.</h2>
+        </div>
+        <p>
+          Este site usa informações fictícias para demonstração, mas já vem com
+          estrutura profissional: seções de venda, cardápio, carrinho, WhatsApp,
+          mapa, contato e prova social.
+        </p>
+      </section>
+
+      <section class="section menu-section reveal" id="cardapio">
+        <div class="section-heading">
+          <p class="eyebrow">Cardápio interativo</p>
+          <h2>Escolha suas pizzas e finalize no WhatsApp</h2>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Categorias do cardápio">
+          <button class="tab active" data-category="pizzas" type="button">Pizzas</button>
+          <button class="tab" data-category="bebidas" type="button">Bebidas</button>
+          <button class="tab" data-category="sobremesas" type="button">Sobremesas</button>
+        </div>
+
+        <div class="order-layout" id="pedido">
+          <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+          <aside class="cart-panel" aria-label="Resumo do pedido">
+            <div class="cart-header">
+              <span class="eyebrow">Seu pedido</span>
+              <button class="text-button" id="clearCart" type="button">Limpar</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <label class="field">
+              <span>Nome para o pedido</span>
+              <input id="customerName" type="text" placeholder="Ex: Mariana" />
+            </label>
+            <label class="field">
+              <span>Entrega ou retirada</span>
+              <select id="orderType">
+                <option value="Entrega">Entrega</option>
+                <option value="Retirada no balcão">Retirada no balcão</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Observação</span>
+              <textarea id="orderNote" rows="3" placeholder="Ex: sem cebola, troco para R$ 100"></textarea>
+            </label>
+            <div class="total-row">
+              <span>Total</span>
+              <strong id="cartTotal">R$ 0,00</strong>
+            </div>
+            <button class="button primary full" id="sendWhatsApp" type="button">Enviar pedido no WhatsApp</button>
+            <p class="cart-note">WhatsApp fictício: (71) 99999-9999</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reviews reveal" id="avaliacoes">
+        <div class="section-heading">
+          <p class="eyebrow">Comentários estilo Google Maps</p>
+          <h2>Clientes falando do sabor, entrega e atendimento</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div><strong>Ana Beatriz</strong><span>★★★★★</span></div>
+            <p>Pizza muito bem recheada, massa leve e chegou quentinha. A de calabresa especial virou favorita aqui em casa.</p>
+          </article>
+          <article class="review-card">
+            <div><strong>Rafael Lima</strong><span>★★★★★</span></div>
+            <p>Atendimento rápido pelo WhatsApp e entrega antes do prazo. Site fácil de escolher o pedido.</p>
+          </article>
+          <article class="review-card">
+            <div><strong>Camila Torres</strong><span>★★★★☆</span></div>
+            <p>Ambiente bonito, pizza caprichada e sobremesa excelente. Recomendo a borda de catupiry.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contato">
+        <div class="contact-list">
+          <article class="contact-card">
+            <span>⌖</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Nanjing Road, 300, Huangpu, Xangai, China</p>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span>☎</span>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <p>(71) 99999-9999</p>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span>@</span>
+            <div>
+              <strong>Instagram</strong>
+              <p>@supersupersite</p>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span>✉</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>@siteexemplo@site.com.br</p>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span>◷</span>
+            <div>
+              <strong>Horário</strong>
+              <p>Seg. a sex.: 18h às 23h30 • Sáb. e dom.: 17h às 00h</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Localização da Forno Nobre Pizzaria no Google Maps"
+            src="https://www.google.com/maps?q=Nanjing%20Road%20300%20Huangpu%20Shanghai%20China&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>Forno Nobre Pizzaria</strong>
+      <span>Site modelo com dados fictícios para demonstração profissional.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
