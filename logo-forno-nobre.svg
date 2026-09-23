@@ -1,0 +1,14 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="76" fill="#211814"/>
+  <path d="M66 186C66 136.294 106.294 96 156 96H164C213.706 96 254 136.294 254 186V200C254 229.823 229.823 254 200 254H120C90.1766 254 66 229.823 66 200V186Z" fill="#C83123"/>
+  <path d="M88 186C88 148.445 118.445 118 156 118H164C201.555 118 232 148.445 232 186V198C232 215.673 217.673 230 200 230H120C102.327 230 88 215.673 88 198V186Z" fill="#F2A72C"/>
+  <path d="M160 58C178 82 204 99 204 130C204 157 184 174 160 174C136 174 116 157 116 130C116 102 142 84 160 58Z" fill="#FFEFBE"/>
+  <path d="M161 91C170 105 183 116 183 133C183 148 174 158 160 158C146 158 137 148 137 133C137 117 151 104 161 91Z" fill="#C83123"/>
+  <path d="M101 204H219" stroke="#211814" stroke-width="14" stroke-linecap="round"/>
+  <path d="M111 182H209" stroke="#211814" stroke-width="10" stroke-linecap="round" opacity=".84"/>
+  <circle cx="129" cy="154" r="10" fill="#C83123"/>
+  <circle cx="166" cy="145" r="10" fill="#C83123"/>
+  <circle cx="194" cy="164" r="10" fill="#C83123"/>
+  <path d="M94 252L113 224H207L226 252H94Z" fill="#FFEFBE"/>
+  <text x="160" y="288" text-anchor="middle" fill="#FFEFBE" font-family="Arial, sans-serif" font-size="32" font-weight="800" letter-spacing="2">FN</text>
+</svg>
